@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/github.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900" />
+
+  <title>Git Explorer</title>
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
+    style='font-family: Inter, "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <!-- Header -->
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f5] px-10 py-3">
+        <div class="flex items-center gap-4 text-[#111518]">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="text-[#111518] text-lg font-bold leading-tight tracking-[-0.015em]">
+            Git Explorer
+          </h2>
+        </div>
+      </header>
+
+      <!-- Search Section -->
+      <div class="px-40 flex flex-1 justify-center  py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+
+
+          <!-- Search Section -->
+          <div class="flex justify-center py-5">
+            <div class="flex flex-col gap-4 items-center">
+              <input placeholder="Enter GitHub username"
+                class="form-input w-[400px] rounded-xl border border-[#dbe1e6] bg-white text-[#111518] placeholder:text-[#60768a] p-2 text-base focus:outline-0 focus:ring-0 focus:border-[#0b80ee] text-sm" />
+              <button
+                class="h-8 px-6 flex items-center justify-center rounded bg-[#0b80ee] text-white text-sm font-bold tracking-[0.015em]">
+                Search
+              </button>
+            </div>
+          </div>
+
+
+          <!-- RESULT CONTAINER WITH PULSE EFFECT -->
+          <div id="resultContainer" class="flex flex-col gap-6 p-4 animate-pulse">
+            <!-- Profile Picture & Info -->
+            <div class="flex w-full flex-col gap-4 items-center">
+              <div class="flex gap-4 flex-col items-center">
+                <img class="bg-gray-200 rounded-full min-h-32 w-32"
+                  src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/github.png" />
+                <div class="flex flex-col items-center justify-center">
+                  <div class="h-7 w-40 bg-gray-200 rounded text-center">Name</div>
+                  <div class="h-5 w-56 bg-gray-200 rounded mt-2 text-center text-sm">Username</div>
+                  <div class="h-5 w-32 bg-gray-200 rounded mt-2 text-center text-sm">Location</div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="flex flex-wrap gap-3 px-4 py-3 visibility">
+              <div
+                class="flex min-w-[111px] flex-1 flex-col gap-2 rounded-lg border border-[#dbe1e6] p-3 items-center text-center">
+                <div class="h-8 w-16 bg-gray-200 rounded"></div>
+                <div class="h-4 w-20 bg-gray-200 rounded"></div>
+
+              </div>
+              <div
+                class="flex min-w-[111px] flex-1 flex-col gap-2 rounded-lg border border-[#dbe1e6] p-3 items-center text-center">
+                <div class="h-8 w-16 bg-gray-200 rounded"></div>
+                <div class="h-4 w-20 bg-gray-200 rounded"></div>
+              </div>
+              <div
+                class="flex min-w-[111px] flex-1 flex-col gap-2 rounded-lg border border-[#dbe1e6] p-3 items-center text-center">
+                <div class="h-8 w-16 bg-gray-200 rounded"></div>
+                <div class="h-4 w-24 bg-gray-200 rounded"></div>
+              </div>
+            </div>
+
+            <!-- Bio Paragraph -->
+            <div class="px-4">
+              <div class="h-4 w-4/5 bg-gray-200 rounded mb-2"></div>
+              <div class="h-4 w-3/5 bg-gray-200 rounded"></div>
+            </div>
+          </div>
+          <!-- END RESULT CONTAINER -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
