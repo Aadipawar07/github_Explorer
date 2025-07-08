@@ -45,11 +45,6 @@ A simple, clean, and modern web application to explore any GitHub user's public 
 
 ---
 
-## 📸 Demo Preview  
-
-![Demo](https://repository-screenshot-placeholder.com/your-screenshot.png) <!-- optional: upload your live demo screenshot and link here -->
-
----
 
 ## 📝 Author
 
