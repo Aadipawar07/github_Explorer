@@ -1,17 +1,9 @@
 function getUserInfo(username) {
-    return fetch(`https://api.github.com/users/${username}`, {
-        headers: {
-            Authorization: "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"
-        }
-    })
+    return fetch(`https://api.github.com/users/${username}`)
         .then((raw) => raw.json())
 }
 function getUserRepos(username) {
-    return fetch(`https://api.github.com/users/${username}/repos`, {
-        headers: {
-            Authorization: "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"
-        }
-    })
+    return fetch(`https://api.github.com/users/${username}/repos`)
         .then((raw) => raw.json())
 }
 // getUserRepos(username)
