@@ -2,7 +2,6 @@
 
 A simple, clean, and modern web application to explore any GitHub user's public profile and stats — like followers, repositories, following, and bio — using the GitHub public API.
 
-![GitHub Explorer Screenshot](https://drive.google.com/file/d/1nRkcWXGUGspBaJEUOhxtdxD55rxuo5RK/view?usp=drive_link) <!-- optional: upload your project screenshot and link here -->
 
 ---
 
